@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amarorn/BovControl-BackEnd.git"
@@ -19,6 +29,7 @@
   "homepage": "https://github.com/amarorn/BovControl-BackEnd#readme",
   "devDependencies": {
     "git-conventional-commits": "^2.1.2",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
