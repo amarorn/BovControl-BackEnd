@@ -1,0 +1,6 @@
+{
+  "*.js": [
+    "standard",
+    "git add"
+  ]
+}

@@ -4,18 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "lint-staged": {
-    "*.js": [
-      "standard",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -29,8 +19,13 @@
   },
   "homepage": "https://github.com/amarorn/BovControl-BackEnd#readme",
   "devDependencies": {
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
     "git-conventional-commits": "^2.1.2",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
+    "jest": "^29.1.2",
     "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
