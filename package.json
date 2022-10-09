@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/amarorn/BovControl-BackEnd#readme",
   "devDependencies": {
-    "git-conventional-commits": "^2.1.2"
+    "git-conventional-commits": "^2.1.2",
+    "lint-staged": "^13.0.3",
+    "standard": "^17.0.0"
   }
 }
